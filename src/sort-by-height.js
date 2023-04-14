@@ -36,8 +36,28 @@ function sortByHeight(arr) {
     }
     steps -= 1;
   } while (swapped);
-  
+
 return arr;
+
+/*
+  const result = [];
+  const sortedArr = arr
+    .filter((item) => item !== -1)
+    .sort((a, b) => a - b);
+   
+    let sortedIdx = 0;
+
+    for (let i = 0; i < arr.length; i += 1) {
+      if (arr[i] === -1) {
+        result.push(arr[i])
+      } else {
+        result.push(sortedArr[sortedIdx])
+        sortedIdx += 1;
+      }
+    }
+
+    return result;
+*/
 }
 
 module.exports = {
